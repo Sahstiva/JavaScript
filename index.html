@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        var name, admin;
+        name = "Василий";
+        admin = name;
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <p class="header_text">Домашнее задание к уроку 1</p>
+        </div>
+        <div class="input_block">
+            <label class="input_label">Введите температуру в градусах Цельсия</label>
+            <input class="input" type="text" id="celsius">
+            <label class="input_label">Перевести в Фаренгейты</label>
+            <input class="input_button" type="button" value="ПОСЧИТАТЬ"
+                onclick="alert(fahrenheit(document.getElementById('celsius').value));">
+            <label class="input_label">Вывести значение переменной "admin"</label>
+            <input class="input_button" type="button" value="ПОКАЗАТЬ" onclick="alert(admin);">
+        </div>
+        <div class="content">
+            <h4 class="content_header">*Чему будет равно JS-выражение 1000 + "108"?</h4>
+            <p class="content_text">Выражение будет равно 1000108, так как оба операнда будут восприниматься, как
+                строковые.</p>
+            <h4 class="content_header">*Самостоятельно разобраться с атрибутами тега script (async и defer).</h4>
+            <h5 class="content_header">Атрибут async</h4>
+                <p class="content_text">Поддерживается всеми браузерами, кроме IE9-. Скрипт выполняется полностью
+                    асинхронно. То есть, при обнаружении async src="..." браузер не останавливает обработку
+                    страницы, а
+                    спокойно работает дальше. Когда скрипт будет загружен – он выполнится.</p>
+                <h5 class="content_header">Атрибут defer</h4>
+                    <p class="content_text">Поддерживается всеми браузерами, включая самые старые IE. Скрипт также
+                        выполняется
+                        асинхронно, не заставляет ждать страницу, но есть два отличия от async.</p>
+                    <ul class="content_list">
+                        <li>Первое – браузер гарантирует, что относительный порядок скриптов с defer будет сохранён.
+                        </li>
+                        <li>Второе отличие – скрипт с defer сработает, когда весь HTML-документ будет обработан
+                            браузером.</li>
+                    </ul>
+        </div>
+        <div class="footer">
+            <p class="footer_text">Работу выполнил студент Витшас Александр</p>
+        </div>
+    </div>
+</body>
+
+</html>
