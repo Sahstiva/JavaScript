@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Домашнее задание к уроку 2</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <p class="header_text">Домашнее задание к уроку 2</p>
+        </div>
+        <div class="content">
+            <h4 class="content_header">Дан код. Почему код даёт именно такие результаты?</h4>
+            <ul class="content_list">
+                <li>var a = 1, b = 1, c, d;</li>
+                <li>c = ++a; alert(c); // 2 a=1, операция ++а префиксная, сначала выполняется, потом возвращает значение
+                    2</li>
+                <li>d = b++; alert(d); // 1 b=1, операция b++ постфиксная, сначала возвращает значение 1, потом
+                    выполняется</li>
+                <li>c = (2+ ++a); alert(c); // 5 а уже равно 2 после второй строчки, ++a возвращает 3 и 3 + 2 = 5</li>
+                <li>d = (2+ b++); alert(d); // 4 b уже равно 2 после третьей строчки, b++ возвращает 2 и 2 + 2 = 4</li>
+                <li>alert(a); а после четвертой строчки равно 3 // 3</li>
+                <li>alert(b); b после пятой строчки тоже равно 3 // 3</li>
+            </ul>
+            <h4 class="content_header">Чему будет равен x в примере ниже?</h4>
+            <ul class="content_list">
+                <li>var a = 2;</li>
+                <li>var x = 1 + (a *= 2);</li>
+            </ul>
+            <p class="content_text">x = 5. Операция a *=2 это то же самое, что a = a * 2, то есть 4. 4 + 1 = 5</p>
+        </div>
+        <div class="content">
+            <h4 class="content_header">Объявить две целочисленные переменные a и b и задать им произвольные начальные
+                значения. Затем написать скрипт</h4>
+        </div>
+        <div class="input_block">
+            <label class="input_label">Введите целое число a</label>
+            <input class="input" type="text" id="num_a">
+            <label class="input_label">Введите целое число b</label>
+            <input class="input" type="text" id="num_b">
+            <label class="input_label">Посчитать</label>
+            <input class="input_button" type="button" value="ПОСЧИТАТЬ"
+                onclick="alert(make_calc(document.getElementById('num_a').value, document.getElementById('num_b').value));">
+        </div>
+        <div class="content">
+            <h4 class="content_header">С помощью оператора switch организовать вывод чисел от случайного числа a до 15
+            </h4>
+            <p class="content_text" id="PutTextHere"></p>
+            <input class="input_button" type="button" value="ВЫВЕСТИ" onclick="show_random();">
+        </div>
+        <div class="content">
+            <h4 class="content_header">Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2,
+                operation)</h4>
+            <div class="input_block">
+                <label class="input_label">Введите операцию, которую надо проделать с a и b</label>
+                <input class="input" type="text" id="oper">
+                <input class="input_button" type="button" value="ВЫПОЛНИТЬ"
+                    onclick="alert(mathOperation(document.getElementById('num_a').value, document.getElementById('num_b').value, document.getElementById('oper').value));">
+            </div>
+        </div>
+        <div class="content">
+            <h4 class="content_header">Сравнить null и 0. Попробуйте объяснить результат.</h4>
+            <p class="content_text">Значение null не равно 0. В JavaScript null не является «ссылкой на несуществующий
+                объект» или «нулевым указателем», как в некоторых других языках. Это просто специальное значение,
+                которое представляет собой «ничего», «пусто» или «значение неизвестно».</p>
+        </div>
+        <div class="content">
+            <h4 class="content_header">С помощью рекурсии организовать функцию возведения числа в степень</h4>
+            <div class="input_block">
+                <label class="input_label">Введите степень, в которую надо возвести a</label>
+                <input class="input" type="text" id="power">
+                <input class="input_button" type="button" value="ВЫПОЛНИТЬ"
+                    onclick="alert(document.getElementById('num_a').value + ' в степени ' + document.getElementById('power').value + ' = ' + power(document.getElementById('num_a').value,document.getElementById('power').value));">
+            </div>
+        </div>
+        <div class="footer">
+            <p class="footer_text">Работу выполнил студент Витшас Александр</p>
+        </div>
+    </div>
+</body>
+
+</html>
