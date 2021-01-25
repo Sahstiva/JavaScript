@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <script>
+        var arrBasket = [];
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <title>Домашнее задание к уроку 3</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <p class="header_text">Домашнее задание к уроку 3</p>
+        </div>
+        <div class="content">
+            <h4 class="content_header">С помощью цикла while вывести все простые числа в промежутке от 0 до 100</h4>
+            <p class="content_text" id="PutTextHere">&nbsp;</p>
+            <input type="button" class="input_button" value="Вывести"
+                onclick="document.getElementById('PutTextHere').innerHTML=print_prime(100);">
+        </div>
+        <div class="content">
+            <h4 class="content_header">Товары в корзине хранятся в массиве. Задачи:</h4>
+            <ul class="content_list">
+                <li>Организовать такой массив для хранения товаров в корзине;</li>
+                <li>Организовать функцию countBasketPrice, которая будет считать стоимость корзины.</li>
+            </ul>
+            <p class="content_text" id="Basket">Корзина: </p>
+            <p class="content_text" id="BasketSum">&nbsp;</p>
+            <input type="button" class="input_button" value="Добавить" onclick="addToBasket();">
+        </div>
+        <div class="content">
+            <h4 class="content_header">Вывести с помощью цикла for числа от 0 до 9, не используя тело цикла.</h4>
+            <p class="content_text" id="Nums">&nbsp;</p>
+            <input type="button" class="input_button" value="Вывести"
+                onclick="for(let i = 0; i < 10; document.getElementById('Nums').innerHTML += i++);">
+        </div>
+        <div class="content">
+            <h4 class="content_header">Нарисовать пирамиду с помощью console.log, как показано на рисунке, только у
+                вашей пирамиды должно быть 20 рядов, а не 5:</h4>
+            <p class="content_text" id="draw">&nbsp;</p>
+            <input type="button" class="input_button" value="Нарисовать" onclick="drawXXX();">
+        </div>
+        <div class="footer">
+            <p class="footer_text">Работу выполнил студент Витшас Александр</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+.chess_board {
+    border: solid 1px black;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.chess_row {
+    border: 0;
+    height: 40px;
+    width: 32-px;
+    display: flex;
+    flex-direction: row;
+}
+.chess_white_cell {
+    border: 0;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(253, 222, 84);
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.chess_black_cell {
+    border: 0;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(100, 65, 0);
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.chess_header_row {
+    border: 0;
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.chess_img {
+    width: 40px;
+    height: 40px;
+}
+.rotated {
+    transform: rotate(180deg);
+    color:black;
+}

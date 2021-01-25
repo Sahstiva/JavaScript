@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Домашнее задание к уроку 4</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <p class="header_text">Домашнее задание к уроку 4</p>
+        </div>
+        <div class="content">
+            <h4 class="content_header">Написать функцию, преобразующую число в объект</h4>
+            <p class="content_text" id="PutTextHere">&nbsp;</p>
+            <label class="input_labes">Введите число от 0 до 999</label>
+            <input type="text" class="input" id="Number">
+            <input type="button" class="input_button" value="Вывести"
+                onclick="createObj(document.getElementById('Number').value);">
+        </div>
+        <div class="content">
+            <h4 class="content_header">Перенести функционал подсчета корзины на объектно-ориентированную базу.</h4>
+            <p class="content_text" id="Basket">Корзина: </p>
+            <p class="content_text" id="BasketSum">&nbsp;</p>
+            <input type="button" class="input_button" value="Добавить" onclick="addToBasketObj();">
+        </div>
+
+        <div class="footer">
+            <p class="footer_text">Работу выполнил студент Витшас Александр</p>
+        </div>
+    </div>
+</body>
+
+</html>

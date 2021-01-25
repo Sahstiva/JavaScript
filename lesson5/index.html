@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chess.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="chess.js"></script>
+    <title>Домашняя работа к уроку 4</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <p class="header_text">Домашнее задание к уроку 4</p>
+        </div>
+        <div class="content">
+            <h4 class="content_header">Создать функцию, генерирующую шахматную доску.</h4>
+            <input type="button" class="input_button" value="Нарисовать" onclick="chess_board()">
+            <input type="button" class="input_button" value="Буквы" onclick="put_figures('letters')">
+            <input type="button" class="input_button" value="Иконки" onclick="put_figures('icons')">
+            <div class="chess_board" id="chess">
+            </div>
+        </div>
+        <div class="footer">
+            <p class="footer_text">Работу выполнил студент Витшас Александр</p>
+        </div>
+    </div>
+</body>
+
+</html>
